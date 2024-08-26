@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Decodificador de Texto</h1>
+    </header>
+    
+    <main>
+        <div class="container">
+            <div class="left-panel">
+                <textarea id="input-text" placeholder="Digite seu texto (apenas letras minúsculas e sem acento)."></textarea>
+                <div class="buttons">
+                    <button onclick="encrypt()">Criptografar</button>
+                    <button onclick="decrypt()">Descriptografar</button>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="result-area" id="result-area">
+                    <img id="imagem" src="imagem.jpg" alt="Imagem Alura">
+                    <h2 id="no-message-title">Nenhuma mensagem encontrada</h2>
+                    <p id="no-message-text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <p id="result-text" style="display: none;"></p>
+                </div>
+                <div class="action-buttons">
+                    <button id="copy-button" onclick="copyText()" style="display: none;">Copiar Texto</button>
+                    <button id="clear-button" onclick="clearText()" style="display: none;">Apagar Texto</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Nicolas - 2024 - Challenge Alura</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
